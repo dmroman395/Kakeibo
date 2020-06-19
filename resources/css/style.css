@@ -1,1 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 
+/*Styling for Header*/
+
+header {
+    height: 250px;
+    background-color: rgba(254,222,213, .5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sun-container {
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255,50,3);
+    position: relative;
+    top: 75px;
+}
+
+#sun {
+    top: 50px;
+    justify-self: center;
+    z-index: 1;
+}
+
+#bottom-half-header {
+    background-color: rgb(58,41,57);
+    z-index: 2;
+    width: 100%;
+    height: 75px;
+    top: 175px;
+    position: absolute;
+}
+
+.circles-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.first-circle {
+    border-radius: 100%;
+    border: solid white 2px;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58,41,57);
+    margin: 0 5px 0 5px;
+}
+
+.second-circle {
+    border-radius: 100%;
+    border: solid white 2px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.third-circle {
+    border-radius: 100%;
+    border: solid white 2px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth-circle {
+    border-radius: 100%;
+    border: solid white 2px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fifth-circle {
+    border-radius: 100%;
+    border: solid white 2px;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.first-row {
+    display: flex;
+    position: relative;
+    bottom: 7px;
+    z-index: 1;
+}
+
+.second-row {
+    display: flex;
+    position: relative;
+    bottom: 55px;
+    left: 45px;
+    z-index: 2;
+}
+
+.third-row {
+    display: flex;
+    position: relative;
+    bottom: 100px;
+    z-index: 3;
+}
+
+.main {
+
+}
