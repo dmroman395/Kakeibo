@@ -11,10 +11,10 @@
                 <div class="sun-container">
                     <div id="sun"></div>
                 </div>
-                <div class="mountain"></div>
-                <div class="mountain"></div>
-                <div class="mountain dark"></div>
             </div>
+            <div class="mountain two"><img src="./resources/images/mountain2.png"></div>
+            <div class="mountain one"><img src="./resources/images/mountain1.png"></div>
+            <div class="mountain three"><img src="./resources/images/mountain3.png"></div>   
             <div id="bottom-half-header">
                 <div class="circles-container">
                     <div class="first-row">
@@ -804,10 +804,21 @@
                     </div>
                 </table>
             </div>
-            <div id="logo-header"></div>
+                <div id="logo-container">
+                    <div class="first-layer">
+                        <div class="second-layer">
+                           <!-- <div class="grid-layer"> -->
+                                    <div class="row-one"><p>&#165;</p></div>
+                                    <div class="row-two"><p>&#163;</p></div>
+                                    <div id="logo-box"></div>
+                                    <div class="row-two"><p>&#8364;</p></div>
+                                     <div class="row-three"><p>&#36;</p></div>
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
         </header>
         <section class="main">
-            <br><br><br><br><br><br>
             <div class="form-container">
                 <form>
                     <div class="form-section-container">
@@ -821,35 +832,35 @@
                             </div>
                             <div class="grid-total">
                                 <div class="grid-container">
-                                    <div class="field1">
+                                    <div class="field first">
                                         <label for="source1">SOURCE:</label><br>
                                         <input name="source1" type="text" id="source1">
                                     </div>
-                                    <div class="field2">
+                                    <div class="field second">
                                         <label for="amount1">AMOUNT:</label><br>
                                         <input name="amount1" type="number" id="amount1">
                                     </div>
-                                    <div class="field3">
+                                    <div class="field third">
                                         <label for="source2">SOURCE:</label><br>
                                         <input name="source2" type="text" id="source2">
                                     </div>
-                                    <div class="field4">
+                                    <div class="field fourth">
                                         <label for="amount2">AMOUNT:</label><br>
                                         <input name="amount2" type="number" id="amount2">
                                     </div>
-                                    <div class="field5">
+                                    <div class="field fifth">
                                         <label for="source3">SOURCE:</label><br>
                                         <input name="source3" type="textr" id="source3">
                                     </div>
-                                    <div class="field6">
+                                    <div class="field sixth">
                                         <label for="amount3">AMOUNT:</label><br>
                                         <input name="amount3" type="number" id="amount3">
                                     </div>
-                                    <div class="field7">
+                                    <div class="field seventh">
                                         <label for="source4">SOURCE:</label><br>
                                         <input name="source4" type="text" id="source4">
                                     </div>
-                                    <div class="field8">
+                                    <div class="field eighth">
                                         <label for="amount4">AMOUNT:</label><br>
                                         <input name="amount4" type="number" id="amount4">
                                     </div>
@@ -866,7 +877,7 @@
                             <h3><span>MONTHLY FIXED EXPENSES</span></h3>
                             <div class="grid-total">
                                 <div class='bill-amount'>
-                                    <div class="grid-container">
+                                    <div class="grid-container left">
                                         <div class="field">
                                             <label for="bill1">BILL:</label><br>
                                             <input name="bill1" type="text" id="bill1">
@@ -900,7 +911,7 @@
                                             <input name="amount8" type="text" id="amount8">
                                         </div>
                                     </div>
-                                    <div class="grid-container">
+                                    <div class="grid-container right">
                                         <div class="field">
                                             <label for="bill5">BILL:</label><br>
                                             <input name="bill5" type="text" id="bill5">
@@ -935,7 +946,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="field-total">
+                                <div class="field-total total-section">
                                     <label for="total2">TOTAL:</label><br>
                                     <input name="total2" type="number" id="total2">
                                 </div>
@@ -943,13 +954,18 @@
                         </div>
                         <div class="savings form-section">
                             <h3><span>SAVINGS GOAL</span></h3>
-                            <div class="field">
-                                <label for="saving-goal">HOW MUCH DO YOU WANT TO SAVE THIS MONTH?</label><br>
-                                <input type="number" id="saving-goal" name="saving-goal">
+                            <div class="savings-fields">    
+                                <div class="field">
+                                    <label for="saving-goal">HOW MUCH DO YOU WANT TO SAVE THIS MONTH?</label><br>
+                                    <input type="number" id="saving-goal" name="saving-goal">
+                                </div>
+                                <div class="field">
+                                    <label for="saving-reason">WHAT ARE YOU SAVING FOR?</label><br>
+                                    <textarea name="saving-reason" id="saving-reason" cols="72" rows="4"></textarea>
+                                </div>
                             </div>
-                            <div class="field">
-                                <label for="saving-reason">WHAT ARE YOU SAVING FOR?</label><br>
-                                <textarea name="saving-reason" id="saving-reason" cols="75" rows="4"></textarea>
+                            <div class="submit-container">
+                                <input id="submit-button" type="submit" value="Submit">
                             </div>
                         </div>
                     </div>
