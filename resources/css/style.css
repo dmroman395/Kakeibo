@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "Raleway", sans-serif;
 }
 
 /*Styling for Header*/
@@ -239,14 +240,15 @@ header {
 
 .form-section {
     width: 50%;
-    background-color: white;
-    border: solid white 1px;
+    background-image: url("../images/section-background.png");
+    background-size: cover;
     margin: 10px 0 20px 0;
-    padding: 35px 50px 35px 50px;
+    padding: 90px 125px 90px 125px;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     display: flex;
     flex-direction: column;
+
 }
 
 .form-section h3 {
@@ -257,21 +259,34 @@ header {
     background-color: rgb(58,41,57);
     color: white;
     padding: 7px 12px;
-    font-weight: 100;
+    font-weight: 300;
+    letter-spacing: .15em;
 }
 
 .field-total label{
     color: rgb(58,41,57);
-    font-weight: 600;
+    font-weight: 700;
     position: relative;
-    top: 12px;
+    top: 8px;
+    letter-spacing: .1em;
 }
 
 .field-total input{
     background-color: #F4E1DD;
     border: none;
     border-radius: 25px;
-    height: 1.5em; 
+    height: 1.5em;
+    padding-left: 15px; 
+}
+
+.field-total select{
+    background-color: #F4E1DD;
+    border: none;
+    border-radius: 25px;
+    height: 1.5em;
+    padding-left: 15px;
+    width: 150px;
+    font-size: 14px; 
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -297,20 +312,26 @@ input[type=number]::-webkit-outer-spin-button {
     width: 90%;
 }
 
-.field input:focus {
+input:focus {
+    outline: none;
+}
+
+select:focus {
     outline: none;
 }
 
 .field label {
     position: relative;
-    top: 8px;
+    top: 7px;
+    font-size: 13px;
+    padding
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 25px;
+    column-gap: 5px;
     row-gap: 10px;
     padding-left: 15px;
 }
@@ -328,11 +349,18 @@ input[type=number]::-webkit-outer-spin-button {
     justify-content: space-between;
 }
 
+#month-label {
+    font-weight: 400;
+    font-style: italic;
+}
+
 /*Styling for Montlhy Fixed Expenses*/
 
 .bill-amount {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    
 }
 
 /*Styling for Montlhy Savings Goal*/
@@ -352,7 +380,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: rgb(58,41,57);
     color: white;
     padding: 7px 12px;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 15px;
     width: 100px;
     border: none;
