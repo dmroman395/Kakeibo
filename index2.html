@@ -823,150 +823,84 @@
             <div class="form-container">
                 <form>
                     <div class="form-section-container">
-                        <div class="monthly-income form-section">
-                            <div class="monthly-income-header">
-                                <h3><span>MONTHLY INCOME</span></h3>
+                        <div class="spending-money form-section">
+                            <div class="spending-money-header">
+                                <h3><span>SPENDING MONEY</span></h3>
                                 <div class="field-total">
                                     <label for="month" id="month-label">Month</label><br>
                                     <select name="month" id="month"> <option value="january">January</option> <option value="february">February</option> <option value="march">March</option> <option value="april">April</option><option value="may">May</option><option value="june">June</option><option value="july">July</option><option value="august">August</option><option value="september">September</option><option value="october">October</option><option value="november">November</option><option value="december">December</option></select>
                                 </div>
                             </div>
-                            <div class="grid-total">
-                                <div class="grid-container">
-                                    <div class="field first">
-                                        <label for="source1">SOURCE:</label><br>
-                                        <input name="source1" type="text" id="source1">
-                                    </div>
-                                    <div class="field second">
-                                        <label for="amount1">AMOUNT:</label><br>
-                                        <input name="amount1" type="number" id="amount1">
-                                    </div>
-                                    <div class="field third">
-                                        <label for="source2">SOURCE:</label><br>
-                                        <input name="source2" type="text" id="source2">
-                                    </div>
-                                    <div class="field fourth">
-                                        <label for="amount2">AMOUNT:</label><br>
-                                        <input name="amount2" type="number" id="amount2">
-                                    </div>
-                                    <div class="field fifth">
-                                        <label for="source3">SOURCE:</label><br>
-                                        <input name="source3" type="textr" id="source3">
-                                    </div>
-                                    <div class="field sixth">
-                                        <label for="amount3">AMOUNT:</label><br>
-                                        <input name="amount3" type="number" id="amount3">
-                                    </div>
-                                    <div class="field seventh">
-                                        <label for="source4">SOURCE:</label><br>
-                                        <input name="source4" type="text" id="source4">
-                                    </div>
-                                    <div class="field eighth">
-                                        <label for="amount4">AMOUNT:</label><br>
-                                        <input name="amount4" type="number" id="amount4">
-                                    </div>
-                                </div>
-                                <div class="total-section">
-                                    <div class="field-total">
-                                        <label for="total1">TOTAL:</label><br>
-                                        <input name="total1" type="number" id="total1">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="monthly-fixed form-section">
-                            <h3><span>MONTHLY FIXED EXPENSES</span></h3>
-                            <div class="grid-total">
-                                <div class='bill-amount'>
-                                    <div class="grid-container left">
-                                        <div class="field">
-                                            <label for="bill1">BILL:</label><br>
-                                            <input name="bill1" type="text" id="bill1">
+                            <div>
+                                <div class="section-container">
+                                    <p>HOW MUCH MONEY DO YOU HAVE TO SPEND THIS MONTH?</p>
+                                    <div class="grid-container-spend1">
+                                        <label for="income">INCOME:</label>
+                                        <label for="expenses">EXPENSES:</label>
+                                        <label for="save-goal">SAVINGS GOAL:</label>
+                                        <label for="spend-money">SPENDING MONEY THIS MONTH:</label>
+                                        <input class="operator-field" type="number" id="income" name="income">
+                                        <div class="operator-field">
+                                            <div class="green-box">
+                                                <div class="subtract"></div>
+                                            </div>
+                                            <input type="number" id="expenses" name="expenses">
                                         </div>
-                                        <div class="field">
-                                            <label for="amount5">AMOUNT:</label><br>
-                                            <input name="amount5" type="text" id="amount5">
+                                        <div class="operator-field">
+                                            <div class="green-box">
+                                                <div class="subtract"></div>
+                                            </div>
+                                            <input type="number" id="save-goal" name="save-goal">
                                         </div>
-                                        <div class="field">
-                                            <label for="bill2">BILL:</label><br>
-                                            <input name="bill2" type="text" id="bill2">
-                                        </div>
-                                        <div class="field">
-                                            <label for="amount6">AMOUNT:</label><br>
-                                            <input name="amount6" type="text" id="amount6">
-                                        </div>
-                                        <div class="field">
-                                            <label for="bill3">BILL:</label><br>
-                                            <input name="bill3" type="text" id="bill3">
-                                        </div>
-                                        <div class="field">
-                                            <label for="amount7">AMOUNT:</label><br>
-                                            <input name="amount7" type="text" id="amount7">
-                                        </div>
-                                        <div class="field">
-                                            <label for="bill4">BILL:</label><br>
-                                            <input name="bill4" type="text" id="bill4">
-                                        </div>
-                                        <div class="field">
-                                            <label for="amount8">AMOUNT:</label><br>
-                                            <input name="amount8" type="text" id="amount8">
-                                        </div>
-                                    </div>
-                                    <div class="grid-container right">
-                                        <div class="field">
-                                            <label for="bill5">BILL:</label><br>
-                                            <input name="bill5" type="text" id="bill5">
-                                        </div>
-                                        <div class="field">
-                                            <label for="amount9">AMOUNT:</label><br>
-                                            <input name="amount9" type="text" id="amount9">
-                                        </div>
-                                        <div class="field">
-                                            <label for="bill6">BILL:</label><br>
-                                            <input name="bill6" type="text" id="bill6">
-                                        </div>
-                                        <div class="field">
-                                            <label for="amount10">AMOUNT:</label><br>
-                                            <input name="amount10" type="text" id="amount10">
-                                        </div>
-                                        <div class="field">
-                                            <label for="bill7">BILL:</label><br>
-                                            <input name="bill7" type="text" id="bill7">
-                                        </div>
-                                        <div class="field">
-                                            <label for="amount11">AMOUNT:</label><br>
-                                            <input name="amount11" type="text" id="amount11">
-                                        </div>
-                                        <div class="field">
-                                            <label for="bill8">BILL:</label><br>
-                                            <input name="bill8" type="text" id="bill8">
-                                        </div>
-                                        <div class="field">
-                                            <label for="amount12">AMOUNT:</label><br>
-                                            <input name="amount12" type="text" id="amount12">
+                                        <div class="operator-field">
+                                            <div class="green-box">
+                                                <div class="equals"></div>
+                                                <div class="equals"></div>
+                                            </div>
+                                            <input type="number" id="spend-money" name="spend-money">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="field-total total-section">
-                                    <label for="total2">TOTAL:</label><br>
-                                    <input name="total2" type="number" id="total2">
+                                <div class="section-container">
+                                    <p>HOW MUCH SPENDING MONEY DO YOU HAVE PER WEEK?</p>
+                                    <div class="grid-container-spend2">
+                                        <label for="spend-money2">SPENDING MONEY THIS MONTH:</label>
+                                        <label for="weeks">NUMBER OF WEEKS:</label>
+                                        <label for="spend-week">SPENDING MONEY PER WEEK:</label>
+                                        <input class="operator-field" type="number" id="spend-money2" name="spend-money2">
+                                        <div class="operator-field">
+                                            <div class="green-box">
+                                                <div class="division-circle"></div>
+                                                <div class="division-line"></div>
+                                                <div class="division-circle"></div>
+                                            </div>
+                                            <input type="number" id="weeks" name="weeks" value=4>
+                                        </div>
+                                        <div class="operator-field">
+                                            <div class="green-box">
+                                                <div class="equals"></div>
+                                                <div class="equals"></div>
+                                            </div>
+                                            <input type="number" id="spend-week" name="spend-week">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="savings form-section">
-                            <h3><span>SAVINGS GOAL</span></h3>
-                            <div class="savings-fields">    
-                                <div class="field">
-                                    <label for="saving-goal">HOW MUCH DO YOU WANT TO SAVE THIS MONTH?</label><br>
-                                    <input type="number" id="saving-goal" name="saving-goal">
+                        <div class="spending-goals form-section">
+                            <h3><span>SPENDING GOALS</span></h3>
+                            <div>
+                                <div>
+                                    <label for="month-goal">WHAT ARE YOUR GOALS FOR THE MONTH?</label><br>
+                                    <textarea name="month-goal" id="month-goal" rows="10" cols="80"></textarea>
                                 </div>
-                                <div class="field">
-                                    <label for="saving-reason">WHAT ARE YOU SAVING FOR?</label><br>
-                                    <textarea name="saving-reason" id="saving-reason" cols="72" rows="4"></textarea>
+                                <div>
+                                    <label for="goal-plan">HOW WILL YOU ACHIEVE THEM?</label><br>
+                                    <textarea name="goal-plan" id="goal-plan" rows="10" cols="80"></textarea>
                                 </div>
-                            </div>
-                            <div class="submit-container">
-                                <input id="submit-button" type="submit" value="SUBMIT">
+                                <div class="submit-container">
+                                    <input id="submit-button" type="submit" value="SUBMIT">
+                                </div>
                             </div>
                         </div>
                     </div>
