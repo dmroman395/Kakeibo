@@ -8,7 +8,7 @@
 
 header {
     height: auto;
-    background-color: rgba(254,222,213, .5);
+    background-image: url(../images/header-background.png);
     overflow: hidden;
     display: grid;
     grid-template-columns: 100%;
@@ -451,6 +451,17 @@ select:focus {
 }
 
 .section-container p {
+    position: relative;
+    top: 7px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.section-container2  {
+    margin-top:20px
+}
+
+.section-container2 p {
     position: relative;
     top: 7px;
     font-weight: 500;
