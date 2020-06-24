@@ -256,6 +256,11 @@ header {
     margin-bottom: 30px;
 }
 
+.section-month-header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .form-section h3 span {
     background-color: rgb(58,41,57);
     color: white;
@@ -348,11 +353,6 @@ textarea:focus {
 
 /*Styling for Montlhy Income*/
 
-.monthly-income-header {
-    display: flex;
-    justify-content: space-between;
-}
-
 #month-label {
     font-weight: 400;
     font-style: italic;
@@ -399,11 +399,6 @@ textarea:focus {
 }
 
 /*Styling for Spending Money Section*/
-
-.spending-money-header {
-    display: flex;
-    justify-content: space-between;
-}
 
 .grid-container-spend1 {
     display: grid;
