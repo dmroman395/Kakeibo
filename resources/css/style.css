@@ -140,7 +140,7 @@ header {
 .second-row {
     display: flex;
     position: relative;
-    bottom: 55px;
+    bottom: 65px;
     left: 25px;
     z-index: 2;
 }
@@ -148,7 +148,7 @@ header {
 .third-row {
     display: flex;
     position: relative;
-    bottom: 100px;
+    bottom: 120px;
     right: 25px;
     z-index: 3;
 }
