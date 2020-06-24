@@ -133,6 +133,7 @@ header {
     display: flex; 
     position: relative;
     bottom: 7px;
+    right: 25px;
     z-index: 1;
 }
 
@@ -140,7 +141,7 @@ header {
     display: flex;
     position: relative;
     bottom: 55px;
-    left: 45px;
+    left: 25px;
     z-index: 2;
 }
 
@@ -148,6 +149,7 @@ header {
     display: flex;
     position: relative;
     bottom: 100px;
+    right: 25px;
     z-index: 3;
 }
 
